@@ -77,10 +77,10 @@ Refer to the [Features](#features) below for details of each command.
   e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
 
 * Items in square brackets are optional.<br>
-  e.g `n/NAME [t/TAG]` can be used as `n/John Doe t/Grade10` or as `n/John Doe`.
+  e.g `n/NAME [t/TAG]` can be used as `n/John Doe t/talkative` or as `n/John Doe`.
 
 * Items with `…`​ after them can be used zero or multiple times.<br>
-  e.g. `[t/TAG]…​` can be used as `t/friend` or `t/friend t/family`
+  e.g. `[t/TAG]…​` can be used as `t/quiet` or `t/friendly t/slowlearner`
 
 * Parameters can be in any order.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER` then `p/PHONE_NUMBER n/NAME` is also acceptable.
@@ -98,7 +98,7 @@ Displays a pop-up window containing a complete list of all available commands, g
 
 Format: `help`
 
-![help_window](images/helpWindow.png)
+![help_message](images/helpMessage.png)
 <p align="center"><em>Pop-up window after entering the `help` command </em></p>
 
 <br>
@@ -323,7 +323,7 @@ _Deletes the attribute `subject` from the 1st student._
 _Deletes multiple attributes `age` and `subject` from the 2nd student._
 
 <div markdown="span" class="alert alert-primary">:bulb: Tip:
-Use this when a student's status changes (e.g., they're no longer a "NewStudent" or have cleared their "BehindPayment" status).
+Use this when a student's attribute changes (e.g. they're no longer taking a certain subject).
 </div>
 
 ![Result of deleting attributes](images/deltagUI.png)
